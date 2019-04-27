@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[google search completed]]>
+    </line>
+    <line>
+      <![CDATA[Product search list clicked]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="31384" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:40Z">
+    <groups>
+      <group name="login">
+        <method signature="Flipkart.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="login" class="com.qa.flipkart.Flipkart"/>
+        <method signature="Flipkart.searchAndSelectProduct(java.lang.String)[pri:1, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="searchAndSelectProduct" class="com.qa.flipkart.Flipkart"/>
+        <method signature="Flipkart.tc5()[pri:6, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="tc5" class="com.qa.flipkart.Flipkart"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="Amazontest" duration-ms="31384" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:40Z">
+      <class name="com.qa.snapdeal.amazontest">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="initialization" is-config="true" duration-ms="5068" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="amazontc1()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="amazontc1" duration-ms="7" started-at="2019-04-23T02:21:13Z" finished-at="2019-04-23T02:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazontc1 -->
+        <test-method status="PASS" signature="amazontc2()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="amazontc2" duration-ms="26275" started-at="2019-04-23T02:21:13Z" finished-at="2019-04-23T02:21:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[google search completed]]>
+            </line>
+            <line>
+              <![CDATA[Product search list clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazontc2 -->
+      </class> <!-- com.qa.snapdeal.amazontest -->
+    </test> <!-- Amazontest -->
+  </suite> <!-- Suite -->
+</testng-results>

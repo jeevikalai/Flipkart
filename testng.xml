@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests"> 
+<!-- parameter name="username" value="jeevikalai@gmail.com"></parameter>
+<parameter name="password" value="Anuska123"></parameter -->
+<listeners>
+<listener class-name="com.qa.flipkart.Reporter"/>
+<listener class-name="com.qa.flipkart.ListenerTest"></listener>
+</listeners>
+  <test  name="Flipkarttest">
+   
+    <classes>
+      <class name="com.qa.flipkart.Flipkart"/>
+    </classes>
+      
+  </test>
+  <test  name="Amazontest">
+   	
+    <classes>
+      <class name="com.qa.snapdeal.amazontest"/>
+    </classes>
+      
+  </test> <!-- running multiple test parallely Test -->
+  
+</suite> <!-- Suite -->
