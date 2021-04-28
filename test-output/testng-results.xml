@@ -1,38 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="1" total="4" passed="2" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[google search completed]]>
     </line>
-    <line>
-      <![CDATA[Product search list clicked]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="31384" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:40Z">
+  <suite started-at="2021-04-28T19:53:15Z" name="Suite" finished-at="2021-04-28T19:54:26Z" duration-ms="70601">
     <groups>
       <group name="login">
-        <method signature="Flipkart.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="login" class="com.qa.flipkart.Flipkart"/>
-        <method signature="Flipkart.searchAndSelectProduct(java.lang.String)[pri:1, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="searchAndSelectProduct" class="com.qa.flipkart.Flipkart"/>
-        <method signature="Flipkart.tc5()[pri:6, instance:com.qa.flipkart.Flipkart@5700d6b1]" name="tc5" class="com.qa.flipkart.Flipkart"/>
+        <method signature="Flipkart.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.flipkart.Flipkart@38e79ae3]" name="login" class="com.qa.flipkart.Flipkart"/>
+        <method signature="Flipkart.searchAndSelectProduct(java.lang.String)[pri:1, instance:com.qa.flipkart.Flipkart@38e79ae3]" name="searchAndSelectProduct" class="com.qa.flipkart.Flipkart"/>
+        <method signature="Flipkart.tc5()[pri:6, instance:com.qa.flipkart.Flipkart@38e79ae3]" name="tc5" class="com.qa.flipkart.Flipkart"/>
       </group> <!-- login -->
     </groups>
-    <test name="Amazontest" duration-ms="31384" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:40Z">
+    <test started-at="2021-04-28T19:53:15Z" name="cheapoairtest" finished-at="2021-04-28T19:53:21Z" duration-ms="6420">
+      <class name="com.qa.snapdeal.NewTest">
+        <test-method signature="f()[pri:0, instance:com.qa.snapdeal.NewTest@4470f8a6]" started-at="2021-04-28T19:53:15Z" name="f" finished-at="2021-04-28T19:53:21Z" duration-ms="6397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.qa.snapdeal.NewTest -->
+    </test> <!-- cheapoairtest -->
+    <test started-at="2021-04-28T19:53:22Z" name="Amazontest" finished-at="2021-04-28T19:54:26Z" duration-ms="64061">
       <class name="com.qa.snapdeal.amazontest">
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="initialization" is-config="true" duration-ms="5068" started-at="2019-04-23T02:21:08Z" finished-at="2019-04-23T02:21:13Z">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.qa.snapdeal.amazontest@2a266d09]" started-at="2021-04-28T19:53:22Z" name="initialization" finished-at="2021-04-28T19:53:25Z" duration-ms="3278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="amazontc1()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="amazontc1" duration-ms="7" started-at="2019-04-23T02:21:13Z" finished-at="2019-04-23T02:21:13Z">
+        <test-method signature="amazontc1()[pri:0, instance:com.qa.snapdeal.amazontest@2a266d09]" started-at="2021-04-28T19:53:25Z" name="amazontc1" finished-at="2021-04-28T19:53:25Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazontc1 -->
-        <test-method status="PASS" signature="amazontc2()[pri:0, instance:com.qa.snapdeal.amazontest@6e1ec318]" name="amazontc2" duration-ms="26275" started-at="2019-04-23T02:21:13Z" finished-at="2019-04-23T02:21:40Z">
+        <test-method signature="amazontc2()[pri:0, instance:com.qa.snapdeal.amazontest@2a266d09]" started-at="2021-04-28T19:53:25Z" name="amazontc2" finished-at="2021-04-28T19:53:34Z" duration-ms="9087" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 4 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at com.qa.snapdeal.amazontest.amazontc2(amazontest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
             <line>
               <![CDATA[google search completed]]>
-            </line>
-            <line>
-              <![CDATA[Product search list clicked]]>
             </line>
           </reporter-output>
         </test-method> <!-- amazontc2 -->

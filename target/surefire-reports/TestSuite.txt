@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 329.223 s <<< FAILURE! - in TestSuite
+amazontc2(com.qa.snapdeal.amazontest)  Time elapsed: 3.386 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 0
+	at com.qa.snapdeal.amazontest.amazontc2(amazontest.java:51)
+
+login(com.qa.flipkart.Flipkart)  Time elapsed: 60.108 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_39M2dM']//input[@type='text']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+*** Element info: {Using=xpath, value=//div[@class='_39M2dM']//input[@type='text']}
+	at com.qa.flipkart.Flipkart.login(Flipkart.java:62)
+
+login(com.qa.flipkart.Flipkart)  Time elapsed: 60.053 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_39M2dM']//input[@type='text']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+*** Element info: {Using=xpath, value=//div[@class='_39M2dM']//input[@type='text']}
+	at com.qa.flipkart.Flipkart.login(Flipkart.java:62)
+
+searchAndSelectProduct(com.qa.flipkart.Flipkart)  Time elapsed: 6.158 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="L0Z3Pu" type="submit">...</button> is not clickable at point (835, 28). Other element would receive the click: <div class="_2hriZF _2rbIyg" tabindex="-1">...</div>
+  (Session info: chrome=90.0.4430.85)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+	at com.qa.flipkart.Flipkart.searchAndSelectProduct(Flipkart.java:127)
+
+searchAndSelectProduct(com.qa.flipkart.Flipkart)  Time elapsed: 6.169 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="L0Z3Pu" type="submit">...</button> is not clickable at point (835, 28). Other element would receive the click: <div class="_2hriZF _2rbIyg" tabindex="-1">...</div>
+  (Session info: chrome=90.0.4430.85)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+	at com.qa.flipkart.Flipkart.searchAndSelectProduct(Flipkart.java:127)
+
+tc3(com.qa.flipkart.Flipkart)  Time elapsed: 65.037 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='_2AkmmA _2Npkh4 _2MWPVK']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+*** Element info: {Using=xpath, value=//button[@class='_2AkmmA _2Npkh4 _2MWPVK']}
+	at com.qa.flipkart.Flipkart.tc3(Flipkart.java:152)
+
+tc4(com.qa.flipkart.Flipkart)  Time elapsed: 60.06 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='_1qKb_B']//select[@class='fPjUPw']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+*** Element info: {Using=xpath, value=//div[@class='_1qKb_B']//select[@class='fPjUPw']}
+	at com.qa.flipkart.Flipkart.tc4(Flipkart.java:173)
+
+tc5(com.qa.flipkart.Flipkart)  Time elapsed: 60.015 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='container']/div/div[1]/div[1]/div[2]/div[3]/div/div/span/div"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'BUR-JSWAMYNA-W1', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\JSWAMY~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 231b0a550aa44f683ace7a9a19b13f76
+*** Element info: {Using=xpath, value=//*[@id='container']/div/div[1]/div[1]/div[2]/div[3]/div/div/span/div}
+	at com.qa.flipkart.Flipkart.tc5(Flipkart.java:215)
+
