@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.flipkart.Reporter"/>
+    <listener class-name="com.qa.flipkart.ListenerTest"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Amazontest(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.snapdeal.amazontest">
+        <methods>
+          <include name="amazontc2"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- com.qa.snapdeal.amazontest -->
+    </classes>
+  </test> <!-- Amazontest(failed) -->
+  <test thread-count="2" parallel="tests" name="Flipkarttest(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.flipkart.Flipkart">
+        <methods>
+          <include name="afterTest"/>
+          <include name="searchAndSelectProduct" invocation-numbers="0 1"/>
+          <include name="login" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="tc5"/>
+          <include name="tc3"/>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.Flipkart -->
+    </classes>
+  </test> <!-- Flipkarttest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
